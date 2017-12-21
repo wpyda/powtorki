@@ -139,3 +139,38 @@
 
 /// REDUCE
 
+// var numbers = [1,2,3,4,5,6];
+// var sum = numbers.reduce(function (reduced, element, index, array) {
+//     return reduced + element
+// }, 0);
+
+// var names = ['Ala', 'Ola', 'Ela', 'Kasia'];
+// var oneBigName = names.reduce(function (reduced, el, i, arr) {
+//     return reduced + el + ' ' + el + ' '
+// }, '').slice(0, -1);
+
+// var orderBasket = [
+//     {name: 'Vege Ser', price: 1100},
+//     {name: 'Parowka sojowa', price: 200},
+//     {name: 'Falafel', price: 800}
+// ];
+//
+// var orderTotal = orderBasket.reduce(function (reduced, el, index, array) {
+//     return reduced + el.price
+// }, 0);
+
+//// PROTOTYPES
+
+var snowFlake = {
+    color: 'white',
+    img: 'url',
+    element: null,
+    init: function () {
+        var div = document.createElement('div')
+        div.style.backgroundColor = this.color
+        div.style.width = '100px'
+        div.style.height = '100px'
+        document.body.appendChild(div)
+        this.element = div
+    }
+}
